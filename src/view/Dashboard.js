@@ -1,11 +1,19 @@
 import {LineGraph} from "../components/LineGraph"
-import prices from '../components/data/data.json'
+import {PieChart} from "../components/PieChart"
+import { Treemaps } from "../components/Treemaps"
+
 
 export const Dashboard=()=>{
-
     return(
-        <div>
-            <LineGraph data={dataArr}/>
+        <div style={{margin:15,display:'flex'}}>
+            <div style={{display:"inline-block", padding:5}}>
+                <LineGraph />
+                <PieChart/>
+            </div>
+            <div style={{display:"inline-block", padding:5}}>
+                <Treemaps/>
+            </div>
+
         </div>
     )
 
