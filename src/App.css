@@ -122,3 +122,297 @@ body.menu-toggled > .meta-link > span {
     display: block;
     /* Other styles here */
 }
+
+
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+#image-track > img {
+  width: 40vmin;
+  height: 80vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+  
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* -- Card Styles -- */
+
+.box-container {
+  position: relative;
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between boxes */
+}
+
+.box {
+  width:45%;
+
+  background-color: #002749;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.box-extended{
+  width:95%;
+  background-color: #002749;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.text {
+  color: white;
+  background: inherit;
+  bottom: 10%;
+  left: 10%;
+}
+
+/* Style each box */
+
+.card {
+  background-color: #004685;
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  border-radius:8px;
+}
+
+.card > div {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the expanded card overlay */
+.expanded-card > img {
+  background-color: #004685;
+  width:100vw;
+	height: 100vh;
+  position:relative;
+}
+.expanded-card > img {
+  top:-39%;
+  left:-40%;
+	height: 100vh;
+	position: absolute;
+  z-index:99;
+  user-select: none; /* -- Prevent image highlighting -- */
+}
+
+/* Styling for the close button in the expanded card */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+}
+
+
+h1 {
+  color:#EE1C25;
+}
+
+a {
+  align-content: baseline;
+}
+
+.btn{
+  background:#2ecc71;
+  width:40%;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+  border-radius:4px;
+  border: #27ae60 1px solid;
+  
+  margin-top:5px;
+  float:left;
+  margin-left:16px;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+.btn:hover{
+  background:#2CC06B; 
+}
+
+#btn2{
+  float:left;
+  background:#EE1C25;
+  width:40%;  padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+  border-radius:4px;
+  border: #9e2a2a 1px solid;
+  
+  margin-top:5px;
+  margin-left:10px;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+#btn2:hover{ 
+background:#9e2a2a; 
+}
+
+#btn3{
+  float:left;
+  background:#696969;
+  width:5%;
+  color:white;
+  border-radius:4px;
+  align-content: right;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+/* -- YouTube Link Styles -- */
+
+body.menu-toggled > .meta-link > span {
+  color: rgb(30, 30, 30);
+}
+
+#source-link {
+  bottom: 60px;
+}
+
+#source-link > i {
+  color: rgb(94, 106, 210);
+}
+
+#yt-link > i {
+  color: rgb(239, 83, 80);
+}
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  bottom: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;  
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 400ms, border-color 400ms;
+  z-index: 10000;
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-link > i, .meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+/* -- Widget CSS -- */
+.container-main i {
+  color: white;
+  background-color: inherit;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+
+Simplert {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+}
+
+/* Pie Chart*/
+.pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			transparent 100%,
+			#004685 0
+		),
+		conic-gradient(
+			#0a3812 0,
+			#0a3812 38%,
+			#f28e2c 0,
+			#f28e2c 61%,
+			#e15759 0,
+			#e15759 77%,
+			#76b7b2 0,
+			#76b7b2 87%,
+			#59a14f 0,
+			#59a14f 93%,
+			#edc949 0,
+			#edc949 100%
+	);
+	position: relative;
+	width: 100%;
+  height:100%;
+	margin: 0;
+  color: transparent;
+	outline: 5px solid #004685;
+}
+
+.pie-chart figcaption {
+  overflow: hidden;
+	bottom: 1em;
+	right: 1em;
+	font-size:xx-small;
+	text-align: right;
+  flex-wrap: nowrap;
+}
+
+/*Create portfolio*/
+.createPortfolio > input {
+  width:40%;
+}
+
+.table {
+  width:100%;
+  height:68%;
+  max-height: 68%;
+}
