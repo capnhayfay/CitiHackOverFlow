@@ -106,7 +106,7 @@ torchaudio==2.0.2
 torchelastic==0.2.2
 torchtext==0.15.2
 torchvision==0.15.2
-transformers==4.32.1
+transformers==4.36.0
 triton==2.0.0
 trl==0.7.1
 typer==0.7.0
